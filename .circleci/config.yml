@@ -1,6 +1,5 @@
 version: 2.1
 
-# Define the jobs we want to run for this project
 jobs:
   build:
     docker:
@@ -15,7 +14,6 @@ jobs:
       - checkout
       - run: echo "this is the test job"
 
-# Orchestrate our job run sequence
 workflows:
   build_and_test:
     jobs:
